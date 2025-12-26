@@ -3,5 +3,12 @@
   <body>
     <h1>Hello!!</h1>
     Hello! This is my first template.
+
+    <ul>
+        {% for item in news_items %}
+            <li>{{ item.title }}</li>
+        {% endfor %}
+    </ul>
   </body>
 </html>
+
