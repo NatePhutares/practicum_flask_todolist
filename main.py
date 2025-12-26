@@ -19,11 +19,11 @@ news_items = {
 @app.route("/")
 def index():
     return render_template('index.html', 
-        name="Nate", 
-        time=datetime.now(),
-        news_items=news_items.values())
+                            name="Nate", 
+                            time=datetime.now(),
+                            news_items=news_items.values())
 
-@app.route("/news/<id>/")
+@app.route("/items/<id>/")
 def show_news_item(id):
     news_item = news_items[int(id)]
     return render_template('news_item.html',
