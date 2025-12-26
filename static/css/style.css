@@ -1,0 +1,37 @@
+.news-items {
+  margin: 10px 0;
+}
+
+.up_font {
+    font-size: 1.75rem;
+}
+
+#main_news_list .news-items {
+  border: 1px solid rgb(128, 128, 128);
+  padding: 5px;
+}
+
+.highlight {
+  color: red;
+}
+
+#somying {
+    background-color: rgb(243, 255, 16);
+}
+
+.green_back {
+    background-color: green;
+}
+
+.gray_back {
+    background-color: gray;
+}
+
+#news_item_2 {
+    background-color: green;
+    font-size: 1.5rem;
+}
+
+#main_news_list li:nth-child(2) a {
+  color: white;
+}
