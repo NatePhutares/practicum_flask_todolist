@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import redirect
+from flask import url_for
 from datetime import datetime
 
 app = Flask(__name__)
@@ -36,7 +38,9 @@ def show_news_item(id):
 def create_news_item():
     item = new_news_item(request.form['title'], request.form['body'])
     news_items[item['id']] = item
-    return ''
+    return redirect(url_for('index'))
+
+
 def new_news_item(title, body):
     new_id = max(news_items.keys()) + 1
     return {
